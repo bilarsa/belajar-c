@@ -1,4 +1,4 @@
 # belajar-c
-# Nama : Aurum Salsabila 
-# NIM  : 25343046
+## Nama : Aurum Salsabila 
+
 Latihan dasar bahasa C untuk kuliah Informatika
