@@ -1,4 +1,4 @@
 # belajar-c
-## Nama : Aurum Salsabila 
+## Nama : Salsabila 
 
 Latihan dasar bahasa C untuk kuliah Informatika
