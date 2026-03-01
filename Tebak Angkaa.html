@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF 8">
+    <title>Program Menebak Bilangan</title>
+</head>
+<body style="background-color: #c0ddfa;">
+    <div style="text-align: center;">
+        <h2 style="color: #4a4a4a; font-family: sans-serif;">Tebak Angka 1–100</h2>
+        <input type="number" id="tebakan" min="1" max="100" style="width: 200px; padding: 10px; border-radius: 5px; border: 1px solid rgb(135, 135, 248);" placeholder="Masukkan angka">
+        <br>
+        <br>
+        <button onclick="cekTebakan()" style="background-color: rgb(135, 135, 248); color: #4a4a4a; width: 200px; padding: 10px; border_radius: 5px; border: 2px solid rgb(93, 93, 165);">TEBAK!</button>
+        <p id="hasil"></p>
+    </div>
+
+    <script>
+        let bilanganTersembunyi = Math.floor(Math.random() * 100) + 1;
+
+        function cekTebakan() {
+            let tebakan = parseInt(document.getElementById("tebakan").value);
+            let hasil = document.getElementById("hasil");
+
+            if(tebakan < bilanganTersembunyi) {
+                hasil.innerText = "terlalu rendah, ulang lagi y";
+            } else if(tebakan > bilanganTersembunyi) {
+                hasil.innerText = "Yeuu terlalu tinggi, ulang ulang";
+            } else {
+                hasil.innerText = "Aelah, hoki nih omberr";
+            }
+        }
+    </script>
+</body>
+</html>
